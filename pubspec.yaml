@@ -53,6 +53,9 @@ flutter:
      - assets/image/flat/social distancing.jpg
      - assets/image/flat/wash hand.jpg
      - assets/image/flat/wearing mask.jpg
+     - assets/image/flat/home.jpg
+     - assets/image/flat/book.jpg
+     - assets/image/flat/hospital.jpg
      
      
   # An image asset can refer to one or more resolution-specific "variants", see

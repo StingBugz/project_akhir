@@ -11,7 +11,13 @@ class _CatatanState extends State<Catatan> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Center(child: Text("Catatan")),
+        body: ListView(
+          children: <Widget>[
+            Container(
+              alignment: Alignment.topCenter,
+            ),
+          ],
+        ),
       ),
     );
   }
