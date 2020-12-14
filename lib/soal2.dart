@@ -33,7 +33,7 @@ class _Soal2State extends State<Soal2> {
                           child: Container(
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                  image: AssetImage("assets/image/corona.png"),
+                                  image: AssetImage("assets/image/mask.png"),
                                   fit: BoxFit.contain),
                             ),
                           ),
@@ -44,19 +44,67 @@ class _Soal2State extends State<Soal2> {
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
                               Text(
-                                "CORONA VIRUS",
+                                "Pencegahan Penularan Virus Corona",
                                 style: TextStyle(
-                                    fontSize: 35,
+                                    fontSize: 25,
                                     color: Colors.red,
                                     fontWeight: FontWeight.bold),
-                              ),
-                              Text(
-                                "'' Virus Corona atau severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) adalah virus yang menyerang sistem pernapasan. Penyakit karena infeksi virus ini disebut COVID-19. Virus Corona bisa menyebabkan gangguan ringan pada sistem pernapasan, infeksi paru-paru yang berat, hingga kematian. ''",
-                                style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w500,
-                                    fontStyle: FontStyle.italic),
                                 textAlign: TextAlign.center,
+                              ),
+                              Align(
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  "1. Mencuci tangan dengan benar",
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontStyle: FontStyle.italic),
+                                  textAlign: TextAlign.left,
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  "2. Menggunakan masker",
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontStyle: FontStyle.italic),
+                                  textAlign: TextAlign.left,
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  "3. Menjaga daya tahan tubuh",
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontStyle: FontStyle.italic),
+                                  textAlign: TextAlign.left,
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  "4. Menerapkan physical distancing dan isolasi mandiri",
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontStyle: FontStyle.italic),
+                                  textAlign: TextAlign.left,
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  "5. Membersihkan rumah dan melakukan disinfeksi secara rutin",
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontStyle: FontStyle.italic),
+                                  textAlign: TextAlign.left,
+                                ),
                               ),
                               Container(
                                 alignment: Alignment.centerRight,
@@ -81,7 +129,8 @@ class _Soal2State extends State<Soal2> {
                 child: InkWell(
                   splashColor: Colors.blue,
                   onTap: () async {
-                    const url = 'https://www.alodokter.com/virus-corona';
+                    const url =
+                        'https://www.alodokter.com/ketahui-cara-untuk-mencegah-penularan-virus-corona';
                     if (await canLaunch(url)) {
                       await launch(url);
                     } else {

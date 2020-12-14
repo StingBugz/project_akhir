@@ -29,11 +29,13 @@ class _Soal3State extends State<Soal3> {
                     child: Stack(
                       children: <Widget>[
                         Opacity(
-                          opacity: 0.5,
+                          opacity: 0.4,
                           child: Container(
+                            margin: EdgeInsets.only(right: 20, left: 20),
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                  image: AssetImage("assets/image/corona.png"),
+                                  image:
+                                      AssetImage("assets/image/pengobatan.jpg"),
                                   fit: BoxFit.contain),
                             ),
                           ),
@@ -44,19 +46,111 @@ class _Soal3State extends State<Soal3> {
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
                               Text(
-                                "CORONA VIRUS",
+                                "Cara mengobati gejala dari COVID-19",
                                 style: TextStyle(
-                                    fontSize: 35,
+                                    fontSize: 25,
                                     color: Colors.red,
                                     fontWeight: FontWeight.bold),
-                              ),
-                              Text(
-                                "'' Virus Corona atau severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) adalah virus yang menyerang sistem pernapasan. Penyakit karena infeksi virus ini disebut COVID-19. Virus Corona bisa menyebabkan gangguan ringan pada sistem pernapasan, infeksi paru-paru yang berat, hingga kematian. ''",
-                                style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w500,
-                                    fontStyle: FontStyle.italic),
                                 textAlign: TextAlign.center,
+                              ),
+                              Align(
+                                alignment: Alignment.center,
+                                child: Text(
+                                  "untuk gejala rigan",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  "1. Tetap terhidrasi",
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontStyle: FontStyle.italic),
+                                  textAlign: TextAlign.right,
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  "2. Minum parasetamol",
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontStyle: FontStyle.italic),
+                                  textAlign: TextAlign.right,
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  "3. Istirahat yang cukup",
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontStyle: FontStyle.italic),
+                                  textAlign: TextAlign.right,
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  "4. Selalu pantau gejala",
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontStyle: FontStyle.italic),
+                                  textAlign: TextAlign.right,
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  "5. Mengisolasi diri",
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontStyle: FontStyle.italic),
+                                  textAlign: TextAlign.right,
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.center,
+                                child: Text(
+                                  "untuk gejala berat",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  "1. Terapi anti-piretik untuk menurunkan suhu tubuh",
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontStyle: FontStyle.italic),
+                                  textAlign: TextAlign.left,
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  "2. Bantuan mesin ventilator untuk membantu pernapasan",
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontStyle: FontStyle.italic),
+                                  textAlign: TextAlign.left,
+                                ),
                               ),
                               Container(
                                 alignment: Alignment.centerRight,
@@ -81,7 +175,8 @@ class _Soal3State extends State<Soal3> {
                 child: InkWell(
                   splashColor: Colors.blue,
                   onTap: () async {
-                    const url = 'https://www.alodokter.com/virus-corona';
+                    const url =
+                        'https://health.detik.com/berita-detikhealth/d-4971524/5-cara-mengobati-gejala-virus-corona-ringan-di-rumah';
                     if (await canLaunch(url)) {
                       await launch(url);
                     } else {

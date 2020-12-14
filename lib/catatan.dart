@@ -88,7 +88,7 @@ class _CatatanState extends State<Catatan> {
                     margin: EdgeInsets.all(20),
                     alignment: Alignment.centerLeft,
                     child: Text(
-                      "Bagaimana cara mengobati orang yang terjangkit COVID-19 ?",
+                      "Bagaimana cara mengobati gejala COVID-19 ?",
                       style:
                           TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
@@ -111,7 +111,7 @@ class _CatatanState extends State<Catatan> {
                     margin: EdgeInsets.all(20),
                     alignment: Alignment.centerLeft,
                     child: Text(
-                      "Bagaimana kita mengantisipasi COVID-19 ?",
+                      "Apa penyebab kita tertular COVID-19 ?",
                       style:
                           TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),

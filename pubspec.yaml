@@ -50,6 +50,10 @@ flutter:
   assets:
      - assets/image/icon.png
      - assets/image/ori.png
+     - assets/image/corona.png
+     - assets/image/mask.png
+     - assets/image/bersin.png
+     - assets/image/pengobatan.jpg
      - assets/image/flat/protect.jpg
      - assets/image/flat/social distancing.jpg
      - assets/image/flat/wash hand.jpg
@@ -57,7 +61,7 @@ flutter:
      - assets/image/flat/home.jpg
      - assets/image/flat/book.jpg
      - assets/image/flat/hospital.jpg
-     - assets/image/corona.png
+     
      
      
   # An image asset can refer to one or more resolution-specific "variants", see

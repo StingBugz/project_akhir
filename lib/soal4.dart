@@ -33,7 +33,7 @@ class _Soal4State extends State<Soal4> {
                           child: Container(
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                  image: AssetImage("assets/image/corona.png"),
+                                  image: AssetImage("assets/image/bersin.png"),
                                   fit: BoxFit.contain),
                             ),
                           ),
@@ -44,19 +44,56 @@ class _Soal4State extends State<Soal4> {
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
                               Text(
-                                "CORONA VIRUS",
+                                "Penyebab penularan COVID-19",
                                 style: TextStyle(
-                                    fontSize: 35,
+                                    fontSize: 25,
                                     color: Colors.red,
                                     fontWeight: FontWeight.bold),
-                              ),
-                              Text(
-                                "'' Virus Corona atau severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) adalah virus yang menyerang sistem pernapasan. Penyakit karena infeksi virus ini disebut COVID-19. Virus Corona bisa menyebabkan gangguan ringan pada sistem pernapasan, infeksi paru-paru yang berat, hingga kematian. ''",
-                                style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w500,
-                                    fontStyle: FontStyle.italic),
                                 textAlign: TextAlign.center,
+                              ),
+                              Align(
+                                alignment: Alignment.centerRight,
+                                child: Text(
+                                  "1. Penyebaran virus Corona melalui droplet",
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontStyle: FontStyle.italic),
+                                  textAlign: TextAlign.left,
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.centerRight,
+                                child: Text(
+                                  "2. Penyebaran virus Corona melalui udara",
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontStyle: FontStyle.italic),
+                                  textAlign: TextAlign.left,
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.centerRight,
+                                child: Text(
+                                  "3. Penyebaran virus Corona melalui permukaan yang terkontaminasi",
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontStyle: FontStyle.italic),
+                                  textAlign: TextAlign.left,
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.centerRight,
+                                child: Text(
+                                  "4. Penyebaran virus Corona melalui fecal-oral atau limbah manusia",
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontStyle: FontStyle.italic),
+                                  textAlign: TextAlign.left,
+                                ),
                               ),
                               Container(
                                 alignment: Alignment.centerRight,
@@ -81,7 +118,8 @@ class _Soal4State extends State<Soal4> {
                 child: InkWell(
                   splashColor: Colors.blue,
                   onTap: () async {
-                    const url = 'https://www.alodokter.com/virus-corona';
+                    const url =
+                        'https://health.detik.com/berita-detikhealth/d-5122703/berbagai-cara-penyebaran-virus-corona-covid-19-menurut-who-apa-saja';
                     if (await canLaunch(url)) {
                       await launch(url);
                     } else {

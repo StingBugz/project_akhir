@@ -120,7 +120,7 @@ class _BerandaState extends State<Beranda> {
               child: Container(
                 margin: EdgeInsets.fromLTRB(15, 10, 0, 10),
                 child: Text(
-                  "Update Kasus Corona",
+                  "Update Kasus Corona Indonesia",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
               ),
