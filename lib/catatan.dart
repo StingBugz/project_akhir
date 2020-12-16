@@ -28,6 +28,14 @@ class _CatatanState extends State<Catatan> {
               ),
             ),
             Container(
+              margin: EdgeInsets.only(top: 10, left: 15),
+              alignment: Alignment.centerLeft,
+              child: Text(
+                "Catatan",
+                style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold),
+              ),
+            ),
+            Container(
               margin: EdgeInsets.only(top: 10),
               height: 95,
               child: Card(

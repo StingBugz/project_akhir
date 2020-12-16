@@ -30,6 +30,9 @@ dependencies:
   cupertino_icons: ^1.0.0
   carousel_slider: ^2.3.1
   url_launcher: ^5.7.10
+  http: ^0.12.2
+  dio: ^3.0.10
+  flip_card: ^0.4.4
 
 dev_dependencies:
   flutter_test:
@@ -53,6 +56,7 @@ flutter:
      - assets/image/corona.png
      - assets/image/mask.png
      - assets/image/bersin.png
+     - assets/image/map indonesia.png
      - assets/image/pengobatan.jpg
      - assets/image/flat/protect.jpg
      - assets/image/flat/social distancing.jpg

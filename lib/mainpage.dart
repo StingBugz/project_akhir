@@ -20,6 +20,7 @@ class _MainPageState extends State<MainPage> {
       home: Scaffold(
         body: tabs[_currentindex],
         bottomNavigationBar: BottomNavigationBar(
+          elevation: 4,
           currentIndex: _currentindex,
           type: BottomNavigationBarType.fixed,
           items: [

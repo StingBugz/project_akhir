@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:project_akhir/kosultasi.dart';
+import 'package:project_akhir/list_telp_number.dart';
+import 'package:project_akhir/rumah_sakit_terdekat.dart';
 
 class RumahSakit extends StatefulWidget {
   @override
@@ -39,7 +42,10 @@ class _RumahSakitState extends State<RumahSakit> {
               child: Card(
                 child: InkWell(
                   splashColor: Colors.blueAccent,
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => TelNumbList()));
+                  },
                   child: Row(
                     children: [
                       Container(
@@ -51,7 +57,7 @@ class _RumahSakitState extends State<RumahSakit> {
                         ),
                       ),
                       Text(
-                        "Call Line",
+                        "Nomor Telepon RS",
                         style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold),
                       )
@@ -66,13 +72,16 @@ class _RumahSakitState extends State<RumahSakit> {
               child: Card(
                 child: InkWell(
                   splashColor: Colors.blueAccent,
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => Konsultasi()));
+                  },
                   child: Row(
                     children: [
                       Container(
                         margin: EdgeInsets.only(right: 20, left: 30),
                         child: Icon(
-                          Icons.people,
+                          Icons.message,
                           color: Colors.black,
                           size: 40,
                         ),
@@ -93,7 +102,10 @@ class _RumahSakitState extends State<RumahSakit> {
               child: Card(
                 child: InkWell(
                   splashColor: Colors.blueAccent,
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => RSTerdekat()));
+                  },
                   child: Row(
                     children: [
                       Container(

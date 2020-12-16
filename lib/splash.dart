@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project_akhir/mainpage.dart';
+import 'mainpage.dart';
 
 class SplashPage extends StatefulWidget {
   @override
